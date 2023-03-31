@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        var web = ["html", "js", "css", "jquery", "bootstrap"]
+
+        var fsd_java = ["java", "adv java", "hibernate", "spring"]
+        var fsd_python = ["python", "Django"]
+        var fsd_php = ["php", "caravas"]
+        var db = ["mysql", "oracle"]
+
+        document.write("<br>JAVA :" + fsd_java + "<hr>")
+        document.write("<br>Python :" + fsd_python + "<hr>")
+        document.write("<br>PHP :" + fsd_php + "<hr>")
+
+
+        for (i = 0; i < web.length; i++) {
+            fsd_java.unshift(web[i])
+
+        }
+        document.write("<br> UPDATED ARRAY 1 :" + fsd_java + "<hr>")
+
+        for (i = web.length; i >= 0; i--) {
+            fsd_java.unshift(web[i])
+
+        }
+        document.write("<br> UPDATED ARRAY 2 :" + fsd_java + "<hr>")
+
+        for (i = db.length; i >= 0; i--) {
+            fsd_java.push(db[i])
+        }
+
+        document.write("<br> UPDATED ARRAY 3 :" + fsd_java + "<hr>")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
